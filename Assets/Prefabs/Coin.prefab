@@ -73,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -299551633
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 606350985
+  m_SortingLayer: 1
+  m_SortingOrder: 50
   m_Sprite: {fileID: 21300000, guid: 56241fc2b63e1d649abe49dddf31607b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -115,7 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d31986d1daefe42b42b51c82558365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinPickupAnim: {fileID: 3189000167805674359, guid: 09d41bb600679724b9fc392429d6dad0, type: 3}
+  _coinPickupAnim: {fileID: 3189000167805674359, guid: 09d41bb600679724b9fc392429d6dad0,
+    type: 3}
 --- !u!95 &7535252063914850578
 Animator:
   serializedVersion: 5
@@ -136,3 +137,4 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1190749805
+  m_SortingLayerID: -1628607475
   m_SortingLayer: 3
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 43b197869668cb743bf6816113e15295, type: 3}
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1190749805
+  m_SortingLayerID: -1628607475
   m_SortingLayer: 3
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: eb0a9094628be4845a06ab74de794171, type: 3}
@@ -328,7 +328,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1190749805
+  m_SortingLayerID: -1628607475
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ae1fec4b2b7178b478f79f13ac35dc34, type: 3}
@@ -468,7 +468,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1190749805
+  m_SortingLayerID: -1628607475
   m_SortingLayer: 3
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 331832e6e5149334b8e5244b97677544, type: 3}
@@ -502,6 +502,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &7185802058803440154
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -553,7 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mySpeed: 4
   _jumpHeight: 8
-  _rollSpeed: 300
+  _rollSpeed: 50
   _canAttack: 0
   _attackRate: 0.1
   _isGrounded: 0
@@ -562,7 +563,8 @@ MonoBehaviour:
   _playerCollider: {fileID: 7185802058803440154}
   _playerFeet: {fileID: 4145772884387164317}
   _playerHasBow: 0
-  _arrowPrefab: {fileID: 5365144786122714777, guid: ffe23878c4fe58b498e4e2cae38a2a78, type: 3}
+  _arrowPrefab: {fileID: 5365144786122714777, guid: ffe23878c4fe58b498e4e2cae38a2a78,
+    type: 3}
   _bowAndArrow: {fileID: 8989468917609084140}
   _bow: {fileID: 5776285021343191041}
   _arrowSpeed: 10
@@ -636,7 +638,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1190749805
+  m_SortingLayerID: -1628607475
   m_SortingLayer: 3
   m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 29fe8a93e1343ff4a94952987a3c342b, type: 3}
@@ -697,5 +699,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966c6f5ee1c951345999fc28cad07240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _arrowPrefab: {fileID: 5365144786122714777, guid: ffe23878c4fe58b498e4e2cae38a2a78, type: 3}
+  _arrowPrefab: {fileID: 5365144786122714777, guid: ffe23878c4fe58b498e4e2cae38a2a78,
+    type: 3}
   _speed: 5
