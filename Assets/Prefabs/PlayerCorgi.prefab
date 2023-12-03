@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 2948916015905932999}
   - component: {fileID: 2948916015905932998}
   - component: {fileID: 2948916015905932857}
+  - component: {fileID: 425767093}
   m_Layer: 9
   m_Name: PlayerCorgi
   m_TagString: Player
@@ -837,6 +838,42 @@ MonoBehaviour:
   BlockingConditionStates: 
   BlockingWeaponStates: 
   InitialWeapon: {fileID: 3980708714196217524, guid: 4b2597b4bacea104fa991d27b2eedffc,
+    type: 3}
+  CanPickupWeapons: 1
+  WeaponAttachment: {fileID: 0}
+  ForceWeaponScaleResetOnEquip: 0
+  ForceWeaponRotationResetOnEquip: 0
+  AutomaticallyBindAnimator: 1
+  AmmoDisplayID: 0
+  ContinuousPress: 0
+  GettingHitInterruptsAttack: 0
+  CanShootFromLadders: 0
+  FaceWeaponDirection: 0
+  InvertHorizontalAimWhenWallclinging: 0
+  ForceAlwaysShoot: 0
+  BufferInput: 0
+  NewInputExtendsBuffer: 0
+  MaximumBufferDuration: 0.25
+  CurrentWeapon: {fileID: 0}
+--- !u!114 &425767093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2948916015905932858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3141ca867f14a464ab5c3a815142ad80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  InitialWeapon: {fileID: 3432381428874475963, guid: ce14a88bfbd516447ad78ada11eff2c6,
     type: 3}
   CanPickupWeapons: 1
   WeaponAttachment: {fileID: 0}
