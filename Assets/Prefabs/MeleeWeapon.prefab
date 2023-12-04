@@ -49,7 +49,7 @@ MonoBehaviour:
   InitializeOnStart: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.5
+  TimeBetweenUses: 0.3
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
@@ -84,9 +84,9 @@ MonoBehaviour:
   EquippedAnimationParameter: 
   IdleAnimationParameter: 
   StartAnimationParameter: MeleeAttack
-  DelayBeforeUseAnimationParameter: 
-  SingleUseAnimationParameter: 
-  UseAnimationParameter: 
+  DelayBeforeUseAnimationParameter: MeleeAttack
+  SingleUseAnimationParameter: MeleeAttack
+  UseAnimationParameter: MeleeAttack
   DelayBetweenUsesAnimationParameter: 
   InCooldownAnimationParameter: 
   StopAnimationParameter: 
@@ -107,12 +107,12 @@ MonoBehaviour:
   WeaponOnKillFeedback: {fileID: 0}
   ApplyRecoilOnUse: 1
   RecoilOnUseProperties:
-    RecoilForceGrounded: 3
+    RecoilForceGrounded: 0.25
     RecoilForceAirborne: 0
     RecoilAngleModifier: 0
     DirectionMultiplier: {x: 0.5, y: 0.2}
     RecoilStyle: 2
-    Delay: 0.2
+    Delay: 0.15
     RecoilFeedback: {fileID: 0}
   ApplyRecoilOnHitDamageable: 0
   RecoilOnHitDamageableProperties:
@@ -155,8 +155,8 @@ MonoBehaviour:
   AreaOffset: {x: 0.35, y: 0}
   AreaSize: {x: 0.5, y: 0.5}
   ExistingDamageArea: {fileID: 0}
-  InitialDelay: 0.2
-  ActiveDuration: 0.5
+  InitialDelay: 0
+  ActiveDuration: 0.4
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 8448

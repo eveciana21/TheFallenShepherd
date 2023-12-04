@@ -387,12 +387,12 @@ MonoBehaviour:
   CurrentHealth: 0
   TemporarilyInvulnerable: 0
   PostDamageInvulnerable: 0
-  InitialHealth: 10
-  MaximumHealth: 10
+  InitialHealth: 50
+  MaximumHealth: 50
   Invulnerable: 0
   ImmuneToDamage: 0
   DamageFeedbacks: {fileID: 0}
-  FeedbackIsProportionalToDamage: 0
+  FeedbackIsProportionalToDamage: 1
   FlickerSpriteOnHit: 1
   FlickerColor: {r: 1, g: 0.078431375, b: 0.078431375, a: 1}
   ImmuneToKnockback: 0
@@ -509,8 +509,8 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  DashDistance: 3
-  DashForce: 40
+  DashDistance: 1
+  DashForce: 10
   ResetForcesOnExit: 0
   ForceExactDistance: 0
   DetachFromMovingPlatformsOnDash: 0
@@ -525,11 +525,11 @@ MonoBehaviour:
   AutoCorrectTrajectory: 1
   DashDirectionMinThreshold: 0.1
   DashCooldown: 1
-  LimitedDashes: 0
+  LimitedDashes: 1
   SuccessiveDashAmount: 1
   SuccessiveDashesLeft: 1
-  SuccessiveDashResetMethod: 0
-  SuccessiveDashResetDuration: 2
+  SuccessiveDashResetMethod: 1
+  SuccessiveDashResetDuration: 5
   InvincibleWhileDashing: 0
 --- !u!114 &2948916015905933005
 MonoBehaviour:
@@ -589,8 +589,8 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  NumberOfJumps: 2
-  JumpHeight: 3.025
+  NumberOfJumps: 1
+  JumpHeight: 2.5
   JumpRestrictions: 2
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
@@ -622,7 +622,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  RunSpeed: 16
+  RunSpeed: 12
   StopRunAtLowSpeed: 0
   RunLowSpeedThreshold: 1
   ReadInput: 1
@@ -1378,6 +1378,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeWeapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980708714196217524, guid: 4b2597b4bacea104fa991d27b2eedffc,
+        type: 3}
+      propertyPath: StartAnimationParameter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980708714196217524, guid: 4b2597b4bacea104fa991d27b2eedffc,
+        type: 3}
+      propertyPath: SingleUseAnimationParameter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980708714196217524, guid: 4b2597b4bacea104fa991d27b2eedffc,
+        type: 3}
+      propertyPath: DelayBeforeUseAnimationParameter
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980708714196217524, guid: 4b2597b4bacea104fa991d27b2eedffc,
+        type: 3}
+      propertyPath: DelayBeforeUseReleaseInterruption
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980708714196217524, guid: 4b2597b4bacea104fa991d27b2eedffc,
+        type: 3}
+      propertyPath: RecoilOnUseProperties.RecoilStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6147178761573893464, guid: 4b2597b4bacea104fa991d27b2eedffc,
         type: 3}
