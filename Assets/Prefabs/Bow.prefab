@@ -1201,7 +1201,7 @@ MonoBehaviour:
   Interruptable: 0
   InitializeOnStart: 0
   DelayBeforeUse: 0
-  DelayBeforeUseReleaseInterruption: 1
+  DelayBeforeUseReleaseInterruption: 0
   TimeBetweenUses: 1
   TimeBetweenUsesReleaseInterruption: 0
   CooldownDuration: 0
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   RotateWeaponOnSpread: 0
   RandomSpread: 1
   ObjectPooler: {fileID: 8407463959541663818}
-  SpawnPosition: {x: -71.060005, y: -1.38, z: 0}
+  SpawnPosition: {x: 0.7, y: 0, z: 0}
 --- !u!114 &8913773183993262545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6344,7 +6344,14 @@ MonoBehaviour:
     RecoilFeedback: {fileID: 0}
   Weapons:
   - TargetWeapon: {fileID: 7564733638250122692}
-    ChargeDuration: 2
+    ChargeDuration: 0.5
+    TriggerIfChargeInterrupted: 0
+    FlipWhenChargeWeaponFlips: 1
+    ChargeStartFeedbacks: {fileID: 0}
+    ChargeInterruptedFeedbacks: {fileID: 0}
+    ChargeCompleteFeedbacks: {fileID: 0}
+  - TargetWeapon: {fileID: 7564733638250122692}
+    ChargeDuration: 0.5
     TriggerIfChargeInterrupted: 0
     FlipWhenChargeWeaponFlips: 1
     ChargeStartFeedbacks: {fileID: 0}
