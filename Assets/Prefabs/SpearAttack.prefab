@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6147178761573893464}
   - component: {fileID: 3980708714196217524}
   m_Layer: 9
-  m_Name: MeleeWeapon
+  m_Name: SpearAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   AreaSize: {x: 0.5, y: 0.5}
   ExistingDamageArea: {fileID: 0}
   InitialDelay: 0
-  ActiveDuration: 0.4
+  ActiveDuration: 1
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 8448
