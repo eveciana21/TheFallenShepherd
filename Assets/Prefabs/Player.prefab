@@ -72,11 +72,8 @@ GameObject:
   - component: {fileID: 2948916015905933004}
   - component: {fileID: 2948916015905933007}
   - component: {fileID: 2948916015905933006}
-  - component: {fileID: 2948916015905932993}
   - component: {fileID: 2948916015905932992}
   - component: {fileID: 2948916015905932995}
-  - component: {fileID: 2948916015905932994}
-  - component: {fileID: 2948916015905932997}
   - component: {fileID: 2948916015905932996}
   - component: {fileID: 2948916015905932999}
   - component: {fileID: 2948916015905932998}
@@ -591,7 +588,7 @@ MonoBehaviour:
   BlockingWeaponStates: 
   NumberOfJumps: 1
   JumpHeight: 2
-  JumpRestrictions: 2
+  JumpRestrictions: 1
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
   JumpIsProportionalToThePressTime: 1
@@ -628,34 +625,6 @@ MonoBehaviour:
   ReadInput: 1
   AutoRun: 0
   AutoRunThreshold: 0.6
---- !u!114 &2948916015905932993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2948916015905932858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d37391d2147a467db78bf732ae24daa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  MovingPlatformsJumpCollisionOffDuration: 0.05
-  ParticleEmitter: {fileID: 0}
-  JetpackForce: 2.5
-  JetpackUnlimited: 0
-  JetpackFuelDuration: 5
-  JetpackRefuelCooldown: 1
-  RefuelSpeed: 0.5
-  MinimumFuelRequirement: 0.2
-  JetpackRefueledSfx: {fileID: 0}
-  JetpackFuelDurationLeft: 0
 --- !u!114 &2948916015905932992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,56 +666,6 @@ MonoBehaviour:
   BlockingWeaponStates: 
   BufferDurationAfterGrip: 0.3
   InputBasedGrip: 0
---- !u!114 &2948916015905932994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2948916015905932858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51d7707613113491a9d85f1caab5837b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  WallClingingSlowFactor: 0.2
-  RaycastVerticalOffset: 0
-  WallClingingTolerance: 0.3
-  ResetVerticalForceOnEntry: 1
-  InputIndependent: 0
---- !u!114 &2948916015905932997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2948916015905932858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeabffc5d6e694a8287c891288b0a4be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  WallJumpForce: {x: 10, y: 4}
-  ForceMode: 0
-  ForceFlipTowardsDirection: 0
-  ShouldReduceNumberOfJumpsLeft: 1
-  LimitNumberOfWalljumps: 0
-  MaximumNumberOfWalljumps: 3
-  NumberOfWalljumpsLeft: 0
-  AllowCoyoteTime: 0
-  CoyoteTimeDuration: 0.2
 --- !u!114 &2948916015905932996
 MonoBehaviour:
   m_ObjectHideFlags: 0

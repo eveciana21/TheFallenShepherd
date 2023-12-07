@@ -42,23 +42,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4772126042543338885}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0514d297deadac74fb15a7b7326ff0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AimControl: 1
+  AimControl: 3
   RotationMode: 0
   WeaponRotationSpeed: 0
-  InstantFlip: 0
+  InstantFlip: 1
   PreventAimWhileWeaponIsInUse: 0
-  MinimumAngle: -180
-  MaximumAngle: 180
+  MinimumAngle: -15
+  MaximumAngle: 15
   IgnoreSlopeRotation: 0
   IgnoreDownWhenGrounded: 0
-  Reticle: {fileID: 1000010525066036, guid: fdff91f9c641e4bc4ae800f161c07e1f, type: 3}
+  Reticle: {fileID: 5291402705069204634, guid: 8599aded834178c4780a92fb1badd0a1, type: 3}
   DisplayReticle: 1
-  ReticleDistance: 4
+  ReticleDistance: 3
   ReticleZPosition: 0
   ReticleAtMousePosition: 0
   RotateReticle: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 0
-  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
+  WeaponAttachmentOffset: {x: -0.1, y: 0, z: 0}
   FlipWeaponOnCharacterFlip: 1
   FlipValue: {x: -1, y: 1, z: 1}
   LeftHandHandle: {fileID: 0}
@@ -294,8 +294,8 @@ MonoBehaviour:
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 0
   WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
-  FlipWeaponOnCharacterFlip: 0
-  FlipValue: {x: 1, y: 1, z: 1}
+  FlipWeaponOnCharacterFlip: 1
+  FlipValue: {x: -1, y: 1, z: 1}
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
   ModifyMovementWhileEquipped: 0
