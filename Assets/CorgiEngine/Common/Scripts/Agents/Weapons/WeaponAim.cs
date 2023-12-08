@@ -140,6 +140,9 @@ namespace MoreMountains.CorgiEngine
         protected Vector2 _regularHorizontalAimMultiplier = new Vector2(1f, 1f);
 
         [SerializeField] private GameObject _bowAndHands;
+        private Animator _animator;
+        private bool _isFiringArrow;
+        private CharacterHandleSecondaryWeapon _secondaryWeapon;
 
         /// <summary>
         /// On Start(), we trigger the initialization
@@ -148,26 +151,54 @@ namespace MoreMountains.CorgiEngine
         {
             Initialization();
             _bowAndHands.gameObject.SetActive(false);
+            _animator = GameObject.Find("Player").gameObject.GetComponent<Animator>();
+
+
+             //_secondaryWeapon.CurrentWeapon.WeaponState.CurrentState { Weapon.WeaponStates.WeaponDelayBetweenUses}
+
+
         }
 
         private void Update()
         {
-            //if !climbing
-            if (Input.GetMouseButtonDown(1))
+            if (_animator != null)
             {
-                StopCoroutine("EnableHands");
-                StartCoroutine("EnableHands");
-            }
-            if (Input.GetMouseButtonUp(1))
-            {
-                _bowAndHands.gameObject.SetActive(false);
+                if (_animator.GetCurrentAnimatorStateInfo(0).IsName("BowAttack"))
+                {
+                    _isFiringArrow = true;
+                    //StopCoroutine("EnableHands");
+                    StartCoroutine("EnableHands");
+                }
+                else
+                {
+                    _isFiringArrow = false;
+                    _bowAndHands.gameObject.SetActive(false);
+                }
             }
         }
 
+
         IEnumerator EnableHands()
         {
-            yield return new WaitForSeconds(0.45f);
-            _bowAndHands.gameObject.SetActive(true);
+            if (_isFiringArrow == false)
+            {
+                //_bowAndHands.gameObject.SetActive(false);
+                Debug.Log("Not Animating");
+            }
+            if (_isFiringArrow == true)
+            {
+                yield return new WaitForSeconds(0.3f);
+                _bowAndHands.gameObject.SetActive(true);
+                Debug.Log("Animating");
+
+                if (Input.GetMouseButtonUp(1))
+                {
+                    Debug.Log("Reached");
+                    _isFiringArrow = false;
+                    _bowAndHands.gameObject.SetActive(false);
+                }
+            }
+
         }
 
 
