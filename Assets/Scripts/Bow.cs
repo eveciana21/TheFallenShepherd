@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour
 {
-    [SerializeField] GameObject _arrowPrefab;
-    [SerializeField] private float _speed = 5;
-
+    //[SerializeField] GameObject _arrowPrefab;
+    //[SerializeField] private float _speed = 5;
 
     void Update()
     {
@@ -14,17 +13,17 @@ public class Bow : MonoBehaviour
 
         //REMEMBER TO SET THE Z VALUE ON THE PARENT BOW GAMEOBJECT TO -30 FOR THIS TO WORK
 
-
         Vector2 bowPosition = transform.position;
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = mousePosition - bowPosition;
         transform.right = direction;
 
-
         /*Vector3 direction = Camera.main.WorldToScreenPoint(Input.mousePosition) - transform.position;
         Debug.DrawRay(transform.position, direction, Color.red);
         Quaternion.LookRotation(direction);*/
     }
+
+
 
     public void RotateBowRight()
     {

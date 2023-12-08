@@ -131,6 +131,6 @@ MonoBehaviour:
   DisableTargetObjectOnPick: 0
   TargetObjectToDisable: {fileID: 0}
   TargetObjectDisableDelay: 1
-  WeaponToGive: {fileID: 4534115653667315356, guid: b2767caaf187c7f4794ff92885b20a93,
+  WeaponToGive: {fileID: 4534115653667315356, guid: e7647f6774703354baf4e7139783fa8b,
     type: 3}
   HandleWeaponID: 2

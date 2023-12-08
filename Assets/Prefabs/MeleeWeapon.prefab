@@ -83,10 +83,10 @@ MonoBehaviour:
   MirrorCharacterAnimatorParameters: 0
   EquippedAnimationParameter: 
   IdleAnimationParameter: 
-  StartAnimationParameter: 
+  StartAnimationParameter: MeleeAttack
   DelayBeforeUseAnimationParameter: 
   SingleUseAnimationParameter: 
-  UseAnimationParameter: MeleeAttack
+  UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 
   InCooldownAnimationParameter: 
   StopAnimationParameter: 
@@ -156,7 +156,7 @@ MonoBehaviour:
   AreaSize: {x: 0.78, y: 0.5}
   ExistingDamageArea: {fileID: 0}
   InitialDelay: 0.2
-  ActiveDuration: 0.4
+  ActiveDuration: 0.3
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 8448
