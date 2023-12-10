@@ -148,8 +148,7 @@ MonoBehaviour:
   RotateReticle: 1
   ReplaceMousePointer: 1
   DisableReticleOnDeath: 1
-  _bowAndHands: {fileID: 0}
-  _animator: {fileID: 0}
+  _bowAndHands: {fileID: 1366397857848116428}
 --- !u!114 &7564733638250122692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,8 +379,6 @@ MonoBehaviour:
   ReplaceMousePointer: 1
   DisableReticleOnDeath: 1
   _bowAndHands: {fileID: 1366397857848116428}
-  _animator: {fileID: 2948916015905932835, guid: 69f3ced2e78e86c4da1fb11520fac15b,
-    type: 3}
 --- !u!114 &4534115653667315356
 MonoBehaviour:
   m_ObjectHideFlags: 0
